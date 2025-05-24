@@ -1,0 +1,55 @@
+.button{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5;
+}
+.button:hover{
+    -fx-background-color: #3a3a3a;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+.background{
+    -fx-background-color: #212121;
+}
+.text{
+    -fx-fill: white;
+    -fx-font-family: Roboto;
+}
+/* Base ScrollPane styling */
+.scroll-pane {
+    -fx-background-color: linear-gradient(to bottom, #0a1a2f, #1c3a5f);
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+/* Make the viewport transparent so the background shows through */
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Style vertical scrollbar */
+.scroll-bar:vertical {
+    -fx-background-color: linear-gradient(to bottom, #0a1a2f, #1c3a5f);
+}
+
+/* Style horizontal scrollbar */
+.scroll-bar:horizontal {
+    -fx-background-color: linear-gradient(to right, #0a1a2f, #1c3a5f);
+}
+
+/* Scrollbar track */
+.scroll-bar .track {
+    -fx-background-color: transparent; /* or another color if you want it visible */
+}
+
+/* Scrollbar thumb (draggable part) */
+.scroll-bar .thumb {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+}
+
+/* Optional: Hover effect on thumb */
+.scroll-bar .thumb:hover {
+    -fx-background-color: #c8c8c8;
+}
+

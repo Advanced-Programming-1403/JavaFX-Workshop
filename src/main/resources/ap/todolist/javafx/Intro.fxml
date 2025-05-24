@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="384.0" styleClass="background" stylesheets="@Intro.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ap.todolist.javafx.Intro">
+   <children>
+      <Button fx:id="Btn" layoutX="78.0" layoutY="270.0" mnemonicParsing="false" onAction="#ChangeScene" onMouseEntered="#hoverButton" onMouseExited="#unhoverButton" prefHeight="29.0" prefWidth="226.0" text="Get Started">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="icon" layoutX="155.0" layoutY="140.0" prefHeight="70.0" prefWidth="72.0">
+         <children>
+            <SVGPath content="M24.48,29.316l-9.505,9.505L1.588,25.434c-0.784-0.784-0.784-2.054,0-2.838l6.667-6.667  c0.784-0.784,2.054-0.784,2.838,0L24.48,29.316z" fill="#185abd" layoutX="5.0" layoutY="12.0" scaleX="1.5" scaleY="1.5" />
+            <SVGPath content="M17.797,41.642l-6.667-6.667c-0.784-0.784-0.784-2.054,0-2.838L36.907,6.358  c0.784-0.784,2.054-0.784,2.838,0l6.667,6.667c0.784,0.784,0.784,2.054,0,2.838L20.634,41.642  C19.851,42.425,18.58,42.425,17.797,41.642z" fill="#50a5fd" layoutX="14.0" layoutY="10.0" scaleX="1.5" scaleY="1.5" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
