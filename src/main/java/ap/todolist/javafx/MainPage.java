@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 import java.net.URL;
@@ -55,9 +56,23 @@ public class MainPage implements Initializable{
 
     }
     public void addComponents(){
-        for (Task task : tasks) {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Task.fxml"));
+        vbox.getChildren().clear();
 
+        for (Task task : tasks) {
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Task.fxml"));
+                HBox taskBox = fxmlLoader.load();
+
+                TaskController controller = fxmlLoader.getController();
+                controller.setTask(task);
+
+                vbox.getChildren().add(taskBox);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
+
+
+
 }

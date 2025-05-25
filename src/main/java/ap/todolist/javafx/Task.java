@@ -18,4 +18,12 @@ public class Task {
     public void setTaskText(String taskText) {
         this.taskText = taskText;
     }
+
+    public LocalDate getTaskDate() {
+        return taskDate;
+    }
+
+    public void setTaskDate(LocalDate taskDate) {
+        this.taskDate = taskDate;
+    }
 }

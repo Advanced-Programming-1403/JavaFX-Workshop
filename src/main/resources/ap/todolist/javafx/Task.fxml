@@ -4,18 +4,22 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.text.Text?>
 
 <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="600.0" spacing="5.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ap.todolist.javafx.TaskController">
    <padding>
       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
    </padding>
    <children>
-      <RadioButton mnemonicParsing="false" onAction="#disableTask" prefHeight="18.0" prefWidth="14.0">
+      <RadioButton fx:id="radioButton" mnemonicParsing="false" onAction="#disableTask" prefHeight="18.0" prefWidth="14.0">
          <font>
             <Font size="14.0" />
          </font>
       </RadioButton>
-      <TextFlow prefHeight="57.0" prefWidth="550.0" />
+      <Text fx:id="text" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="565.336742401123">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
    </children>
 </HBox>
