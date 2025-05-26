@@ -14,7 +14,7 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Intro.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("To Do");
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("Images/icon.png")));
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

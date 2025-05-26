@@ -22,15 +22,15 @@ public class CSSController implements Initializable {
     @FXML
     ImageView imageView;
     public void ChangeStyle(){
-        if(anchorPane.getStylesheets().toString().contains("CSS_Light.css")){
-            anchorPane.getStylesheets().remove(getClass().getResource("CSS_Light.css").toExternalForm());
-            anchorPane.getStylesheets().add(getClass().getResource("CSS_Dark.css").toExternalForm());
-            Image image = new Image(getClass().getResource("kanye.png").toExternalForm());
+        if(anchorPane.getStylesheets().toString().contains("StyleSheet/CSS_Light.css")){
+            anchorPane.getStylesheets().remove(getClass().getResource("StyleSheet/CSS_Light.css").toExternalForm());
+            anchorPane.getStylesheets().add(getClass().getResource("StyleSheet/CSS_Dark.css").toExternalForm());
+            Image image = new Image(getClass().getResource("Images/kanye.png").toExternalForm());
             imageView.setImage(image);
         }else{
-            anchorPane.getStylesheets().remove(getClass().getResource("CSS_Dark.css").toExternalForm());
-            anchorPane.getStylesheets().add(getClass().getResource("CSS_Light.css").toExternalForm());
-            Image image = new Image(getClass().getResource("thom.png").toExternalForm());
+            anchorPane.getStylesheets().remove(getClass().getResource("StyleSheet/CSS_Dark.css").toExternalForm());
+            anchorPane.getStylesheets().add(getClass().getResource("StyleSheet/CSS_Light.css").toExternalForm());
+            Image image = new Image(getClass().getResource("Images/thom.png").toExternalForm());
             imageView.setImage(image);
         }
     }
@@ -62,7 +62,7 @@ public class CSSController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Image image = new Image(getClass().getResource("kanye.png").toExternalForm());
+        Image image = new Image(getClass().getResource("Images/kanye.png").toExternalForm());
         imageView.setImage(image);
     }
 }

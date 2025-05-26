@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Intro implements Initializable {
+public class IntroController implements Initializable {
 
     @FXML
     Button Btn;
