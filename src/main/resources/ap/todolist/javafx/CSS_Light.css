@@ -1,0 +1,34 @@
+.background{
+    -fx-background-color: #f9f9f9;
+}
+.lightbulb{
+    -fx-fill: #e3e300;
+}
+.button{
+    -fx-background-radius: 5;
+    -fx-background-color: #e9eaea;
+    -fx-font-family: Roboto;
+    -fx-text-fill: #353637;
+}
+.button:hover{
+    -fx-background-radius: 5;
+    -fx-background-color: #d3d3d3;
+    -fx-font-family: Roboto;
+    -fx-text-fill: #2c2c2e;
+    -fx-cursor: hand;
+}
+
+.specificButton{
+    -fx-background-radius: 5;
+    -fx-background-color: #4cc2ff;
+    -fx-text-fill: Black;
+    -fx-font-family: Roboto;
+    -fx-font-size: 14;
+}
+.specificButton:hover{
+    -fx-background-radius: 5;
+    -fx-background-color: #3789b3;
+    -fx-text-fill: Black;
+    -fx-font-family: Roboto;
+    -fx-font-size: 14;
+}

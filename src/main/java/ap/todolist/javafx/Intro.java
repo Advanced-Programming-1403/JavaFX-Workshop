@@ -27,7 +27,7 @@ public class Intro implements Initializable {
     @FXML
     AnchorPane icon;
     @FXML
-    public void ChangeScene(ActionEvent event){
+    public void ChangeScene1(ActionEvent event){
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("MainPage.fxml"));
             Parent root = loader.load();
@@ -39,32 +39,20 @@ public class Intro implements Initializable {
             e.printStackTrace();
         }
     }
+    public void ChangeScene2(ActionEvent event){
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("CSS.fxml"));
+            Parent root = loader.load();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-    @FXML
-    public void hoverButton(){
-        Timeline tx = new Timeline(
-                new KeyFrame(Duration.ZERO, new KeyValue(Btn.scaleXProperty(), Btn.getScaleX())),
-                new KeyFrame(Duration.seconds(0.2), new KeyValue(Btn.scaleXProperty(), 1.04))
-        );
-        Timeline ty = new Timeline(
-                new KeyFrame(Duration.ZERO, new KeyValue(Btn.scaleYProperty(), Btn.getScaleY())),
-                new KeyFrame(Duration.seconds(0.2), new KeyValue(Btn.scaleYProperty(), 1.04))
-        );
-        tx.play();
-        ty.play();
-    }
-    public void unhoverButton(){
-        Timeline tx = new Timeline(
-                new KeyFrame(Duration.ZERO, new KeyValue(Btn.scaleXProperty(), Btn.getScaleX())),
-                new KeyFrame(Duration.seconds(0.2), new KeyValue(Btn.scaleXProperty(), 1))
-        );
-        Timeline ty = new Timeline(
-                new KeyFrame(Duration.ZERO, new KeyValue(Btn.scaleYProperty(), Btn.getScaleY())),
-                new KeyFrame(Duration.seconds(0.2), new KeyValue(Btn.scaleYProperty(), 1))
-        );
-        tx.play();
-        ty.play();
-    }
+
     public void iconMove(){
         Timeline ty = new Timeline(
                 new KeyFrame(Duration.ZERO, new KeyValue(icon.layoutYProperty(), icon.getLayoutY())),

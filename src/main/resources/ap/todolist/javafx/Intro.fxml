@@ -6,10 +6,9 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="384.0" styleClass="background" stylesheets="@Intro.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ap.todolist.javafx.Intro">
    <children>
-      <Button fx:id="Btn" layoutX="78.0" layoutY="270.0" mnemonicParsing="false" onAction="#ChangeScene" onMouseEntered="#hoverButton" onMouseExited="#unhoverButton" prefHeight="29.0" prefWidth="226.0" text="Get Started">
+      <Button fx:id="Btn" layoutX="78.0" layoutY="270.0" mnemonicParsing="false" onAction="#ChangeScene1" prefHeight="29.0" prefWidth="226.0" text="Get Started">
          <font>
             <Font size="10.0" />
          </font>
@@ -20,5 +19,10 @@
             <SVGPath content="M17.797,41.642l-6.667-6.667c-0.784-0.784-0.784-2.054,0-2.838L36.907,6.358  c0.784-0.784,2.054-0.784,2.838,0l6.667,6.667c0.784,0.784,0.784,2.054,0,2.838L20.634,41.642  C19.851,42.425,18.58,42.425,17.797,41.642z" fill="#50a5fd" layoutX="14.0" layoutY="10.0" scaleX="1.5" scaleY="1.5" />
          </children>
       </AnchorPane>
+      <Button layoutX="119.0" layoutY="327.0" mnemonicParsing="false" onAction="#ChangeScene2" prefHeight="29.0" prefWidth="147.0" text="CSS">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
