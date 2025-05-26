@@ -1,10 +1,29 @@
 package ap.todolist.javafx;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Task {
-    String text;
-    Date date;
-    String day;
-//    String color;
+    private String taskText;
+    private LocalDate taskDate;
+
+    public Task(String taskText, LocalDate taskDate) {
+        this.taskText = taskText;
+        this.taskDate = taskDate;
+    }
+
+    public String getTaskText() {
+        return taskText;
+    }
+
+    public void setTaskText(String taskText) {
+        this.taskText = taskText;
+    }
+
+    public LocalDate getTaskDate() {
+        return taskDate;
+    }
+
+    public void setTaskDate(LocalDate taskDate) {
+        this.taskDate = taskDate;
+    }
 }
